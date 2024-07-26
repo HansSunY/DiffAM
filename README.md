@@ -34,12 +34,12 @@ pip install git+https://github.com/openai/CLIP.git
 
 ```shell
 mkdir pretrained
+mv celeba_hq.ckpt pretrained/
 mv makeup.pt pretrained/
 mv model_ir_se50.pth pretrained/
 mv shape_predictor_68_face_landmarks.dat pretrained/
 ```
 
-- The pretrained diffusion model on 256x256 images in CelebA-HQ is automatically downloaded in the code. You can also download it [here](https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/celeba_hq.ckpt) and put it in `DiffAM/pretrained` directory.
 - Please download the target FR models, MT-datasets and target images [here](https://drive.google.com/file/d/1IKiWLv99eUbv3llpj-dOegF3O7FWW29J/view?usp=sharing). Unzip the assets.zip file in `DiffAM/assets`.
 - Please download the [CelebAMask-HQ](https://drive.google.com/file/d/1badu11NqxGf6qM3PTTooQDJvQbejgbTv/view) dataset and unzip the file in `DiffAM/assets/datasets`.
 
