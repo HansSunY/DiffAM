@@ -348,7 +348,7 @@ class DiffAM_MR(object):
                             t = (torch.ones(n) * i).to(self.device)
                             t_prev = (torch.ones(n) * j).to(self.device)
 
-                            x = denoising_step(x, t=t, t_next=t_prev, models=models,
+                            x = denoising_step(x, t=t, t_next=t_prev, models=models[0],
                                                logvars=self.logvar,
                                                sampling_type='ddim',
                                                b=self.betas,
